@@ -44,7 +44,7 @@ Before starting the [LLM-powered scraping](https://brightdata.com/blog/web-data/
 
 Ollama streamlines installing, running, and managing large language models locally.
 
-![Ollama installation page](https://media.brightdata.com/2025/04/ollama-llm-download-installation-page.png)
+![Ollama installation page](https://github.com/luminati-io/llama-3-web-scraping/blob/main/images/ollama-llm-download-installation-page.png)
 
 To get started:
 
@@ -95,7 +95,7 @@ Visit it in your browser—you should see the message **“Ollama is running.”
 
 Let's build a scraper that extracts product details from Amazon—one of the most challenging targets due to its [dynamic content](https://brightdata.com/blog/how-tos/scrape-dynamic-websites-python) and strong anti-bot protections.
 
-![Amazon product page](https://media.brightdata.com/2025/04/amazon-office-chair-product-page-1.png)
+![Amazon product page](https://github.com/luminati-io/llama-3-web-scraping/blob/main/images/amazon-office-chair-product-page-1.png)
 
 We'll extract:
 
@@ -118,7 +118,7 @@ Our LLaMA-powered scraper follows a smart, multi-stage workflow:
 
 Here’s a visual breakdown of the workflow:
 
-![Workflow diagram](https://media.brightdata.com/2025/04/llama-web-scraping-workflow-diagram.png)
+![Workflow diagram](https://github.com/luminati-io/llama-3-web-scraping/blob/main/images/llama-web-scraping-workflow-diagram.png)
 
 We'll be using **Python**, but this can be adapted to other languages like [JavaScript](https://brightdata.com/blog/web-data/best-languages-web-scraping).
 
@@ -187,11 +187,11 @@ When you run the complete script, two files will be generated: `amazon_page.html
 
 The HTML contains around **270,000 tokens**:
 
-![token-calculator-html-tokens](https://media.brightdata.com/2025/04/token-calculator-html-tokens.png)
+![token-calculator-html-tokens](https://github.com/luminati-io/llama-3-web-scraping/blob/main/images/token-calculator-html-tokens.png)
 
 The Markdown version contains only **~11,000 tokens**:
 
-![token-calculator-markdown-tokens](https://media.brightdata.com/2025/04/token-calculator-markdown-tokens.png)
+![token-calculator-markdown-tokens](https://github.com/luminati-io/llama-3-web-scraping/blob/main/images/token-calculator-markdown-tokens.png)
 
 This **96% reduction** leads to:
 
@@ -504,7 +504,7 @@ The script saves the extracted product data to a file named `product_data.json`.
 
 When running the above [web scraping bot](https://brightdata.com/blog/how-tos/what-is-a-scraping-bot), you’ll likely encounter Amazon’s anti-bot measures, such as CAPTCHA challenges:
 
-![amazon-captcha-anti-bot-challenge](https://media.brightdata.com/2025/04/amazon-captcha-anti-bot-challenge.png)
+![amazon-captcha-anti-bot-challenge](https://github.com/luminati-io/llama-3-web-scraping/blob/main/images/amazon-captcha-anti-bot-challenge.png)
 
 While LLaMA 3 handles parsing beautifully, bypassing site protections is still tricky. [Bright Data’s Scraping Browser](https://brightdata.com/products/scraping-browser) provides a powerful solution.
 
@@ -515,7 +515,7 @@ The [Bright Data Scraping Browser](https://brightdata.com/products/scraping-brow
 Some of the reasons to choose it are:
 
 - Reliable TLS fingerprints and stealth evasion
-- Built-in IP rotation via a 150M+ IP proxy network
+- Built-in IP rotation via a [150M+ residential IP proxy network](https://brightdata.com/proxy-types/residential-proxies)
 - Automatic CAPTCHA solving
 - Reduce infrastructure costs – no cloud setup or maintenance needed
 - Native support for Playwright, Puppeteer, and Selenium
@@ -529,15 +529,15 @@ To get started with Scraping Browser:
 
 [Create a Bright Data account](https://brightdata.com/) (new users receive a $5 credit after adding a payment method) and in your dashboard, go to **Proxies & Scraping** and click **Get started**.
 
-![brightdata-scraping-solutions-dashboard](https://media.brightdata.com/2025/04/brightdata-scraping-solutions-dashboard.png)
+![brightdata-scraping-solutions-dashboard](https://github.com/luminati-io/llama-3-web-scraping/blob/main/images/brightdata-scraping-solutions-dashboard.png)
 
-Create a new zone (e.g., _test\_browser_) and enable features like _Premium domains_ and _[CAPTCHA solver](https://brightdata.com/products/web-unlocker/captcha-solver)_.
+Create a new zone (e.g., _test\_browser_) and enable features like _Premium domains_ and [CAPTCHA solver](https://brightdata.com/products/web-unlocker/captcha-solver).
 
-![brightdata-create-scraping-browser-zone](https://media.brightdata.com/2025/04/brightdata-create-scraping-browser-zone.png)
+![brightdata-create-scraping-browser-zone](https://github.com/luminati-io/llama-3-web-scraping/blob/main/images/brightdata-create-scraping-browser-zone.png)
 
 Next, copy the Selenium URL from your dashboard.
 
-![brightdata-selenium-connection-credentials](https://media.brightdata.com/2025/04/brightdata-selenium-connection-credentials.png)
+![brightdata-selenium-connection-credentials](https://github.com/luminati-io/llama-3-web-scraping/blob/main/images/brightdata-selenium-connection-credentials.png)
 
 ### Modifying Your Code for Scraping Browser
 
